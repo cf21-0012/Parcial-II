@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h1 class="mb-4">Producto {{ producto.nombre }}</h1>
+    <table class="table table-hover table-bordered table-striped">
+        <ul class="list-group">
+                <li class="list-group-item"><strong>Nombre:</strong> {{ producto.nombre }}</li>
+                <li class="list-group-item"><strong>Precio:</strong> ${{ producto.precio }}</li>
+            </ul>
+            <a href="/productos" class="btn btn-secondary mt-3">Volver</a>
+    </table>
+</body>
+</html>
